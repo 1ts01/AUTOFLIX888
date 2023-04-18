@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1660919127-MxkZpb2D" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "ทุนฟรีมาแล้ว กดรับเลย",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1097785170855215174/1097785312278757426/50-01.jpeg?width=1068&height=1068",
+            "size": "full",
+            "aspectRatio": "1:1"
+          }
+        ],
+        "cornerRadius": "xxl",
+        "borderWidth": "semi-bold",
+        "borderColor": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🍭แจกโค้ดฟรี 50฿🍭",
+            "align": "center",
+            "weight": "bold",
+            "color": "#191970",
+            "margin": "md"
+          },
+          {
+            "type": "text",
+            "text": "ไม่ต้องฝากก่อน รับได้ทุกคน",
+            "align": "center",
+            "weight": "bold",
+            "color": "#191970"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "คลิกรับโค้ดฟรี 50",
+                  "uri": "https://lin.ee/akk6TdN"
+                },
+                "color": "#006699"
+              }
+            ],
+            "backgroundColor": "#FFFF00",
+            "cornerRadius": "xxl",
+            "offsetTop": "none",
+            "margin": "xs"
+          }
+        ]
+      }
+    ],
+    "backgroundColor": "#87CEFA",
+    "spacing": "xs",
+    "borderWidth": "bold"
+  }
+}
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
