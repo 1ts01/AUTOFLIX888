@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1660978683-DBl0WBZZ" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "หนูมีโค้ด Free มาแจก",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "☀️ แจกโค้ด Free 50 ☀️",
+            "color": "#042e8a",
+            "weight": "bold",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1097785170855215174/1100590632025735188/50-01.jpeg?width=930&height=930",
+            "size": "full"
+          }
+        ],
+        "cornerRadius": "xxl",
+        "borderWidth": "medium",
+        "margin": "sm",
+        "borderColor": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🔥 SUPER JOKR 99 🔥",
+            "color": "#ffea00",
+            "align": "center",
+            "size": "lg",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "โค้ด Free 50.-",
+            "color": "#042e8a",
+            "align": "center",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": " ไม่ต้องฝากก่อน รับได้ทุกคน",
+            "color": "#042e8a",
+            "align": "center",
+            "weight": "bold"
+          }
+        ],
+        "paddingAll": "md",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "รับเครดิตฟรี",
+                      "uri": "https://lin.ee/qVOCAab"
+                    }
+                  }
+                ],
+                "backgroundColor": "#ffffff",
+                "cornerRadius": "lg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "paddingAll": "lg",
+    "backgroundColor": "#87CEFA"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
